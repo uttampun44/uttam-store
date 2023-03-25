@@ -1,5 +1,6 @@
   .header-top{
       background-color: #000;
+      
         .header-sales{
           max-width: 768px;
           margin: 0% auto;
@@ -42,6 +43,13 @@ header{
                   }
                   .search-cart{
                     display: flex;
+                    position: relative;
+                    align-items: center;
+
+                    .cart-whistlist{
+                      display: flex;
+                      gap: 1em;
+                    }
                   }
               }
            }

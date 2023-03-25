@@ -4,6 +4,12 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 function header() {
+
+   const cartStyle= {
+      position: 'relative',
+      right: '30px',
+      top: '10px',
+   }
   return (
     <div>
         <div className='header-top'>
@@ -40,7 +46,7 @@ function header() {
                     
                     <div className='search-cart'>
                            <div className='search-items'>
-                                <input type="text" placeholder='What are you looking for ?'/><SearchIcon />
+                                <input type="text" placeholder='What are you looking for ?'/><SearchIcon style={cartStyle}/>
                            </div>
 
                            <div className='cart-whistlist'>
