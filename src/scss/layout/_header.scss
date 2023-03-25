@@ -1,0 +1,49 @@
+  .header-top{
+      background-color: #000;
+        .header-sales{
+          max-width: 768px;
+          margin: 0% auto;
+          display: flex;
+          justify-content: space-between;
+          padding: 1em 0em;
+
+          .select-language{
+            background-color: none;
+            border: none;
+             }
+        }
+    }
+
+
+header{
+  margin: 2.3em 0em 1.5em 0em;
+    .header-top{
+         color: #000;
+       }
+
+         nav{
+              
+           .nav{
+             max-width: 1200px;
+             margin: 0% auto;
+                .store-header{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                        .home-contact-signup{
+                            ul{
+                               display: flex;
+                               gap: 2.5em;
+                             li{
+                                list-style: none;
+                           }
+                        }
+                     }
+                  }
+                  .search-cart{
+                    display: flex;
+                  }
+              }
+           }
+     
+}

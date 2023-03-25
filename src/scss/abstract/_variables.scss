@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  $primary-font-family: 'Inter', sans-serif;
+  $secondary-font-family: 'Poppins', sans-serif;
+  $font-size-normal: 16px;
+  $primary-font--color: #000;
+  $secondary-font-color: #fff;
+  $font-weight-normal: 400;
+  .header-top{
+
+    .header-sales{
+        p{
+            color: $secondary-font-color;
+            font-family: $secondary-font-family;
+            font-size: 1rem - .1rem;
+            line-height: 21px;
+          }
+            span{
+               color: $secondary-font-color;
+               font-family: $secondary-font-family;
+               font-weight: 600;
+               font-size: 1rem - .1rem;
+               line-height: 21px;
+               margin-left: .5em;
+            }
+
+
+  }
+  .select-language{
+
+    select{
+        background: none;
+        border: none;
+        color: #FAFAFA;
+        font-weight: $font-weight-normal;
+        line-height: 21px;
+        width: 85px;
+    }
+   select option{
+        color: $secondary-font-color;
+        background: #000;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+        padding: 1em 1em;
+    }
+  }  
+}
+
+header{
+     .heading{
+         h1{
+             font-family: $primary-font-family;
+             font-weight: 600;
+             font-style: normal;
+             line-height: 24px;
+
+         }
+     }
+  .home-contact-signup{
+    ul li a{
+       font-family: $secondary-font-family;
+       font-weight: 400;
+       line-height: 24px;
+       font-style: normal;
+    }
+  }
+  .search-cart{
+     .search-items{
+       input{
+        background-color: #F5F5F5;
+        font-family: $secondary-font-family;
+        padding: .7em 1.5em;
+        border-radius: 5px 5px;
+        border: none;
+       }
+     }
+  }
+}
