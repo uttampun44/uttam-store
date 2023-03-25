@@ -2,7 +2,7 @@
       background-color: #000;
       
         .header-sales{
-          max-width: 768px;
+          max-width: 859px;
           margin: 0% auto;
           display: flex;
           justify-content: space-between;
@@ -17,7 +17,8 @@
 
 
 header{
-  margin: 2.3em 0em 1.5em 0em;
+  padding: 2.3em 0em 1.5em 0em;
+  border-bottom: 1px solid #000;
     .header-top{
          color: #000;
        }
@@ -25,7 +26,7 @@ header{
          nav{
               
            .nav{
-             max-width: 1200px;
+             max-width: 1170px;
              margin: 0% auto;
                 .store-header{
                     display: flex;
@@ -37,7 +38,16 @@ header{
                                gap: 2.5em;
                              li{
                                 list-style: none;
+                                a:hover{
+                                  border-bottom: 1px solid #000;
+                                  cursor: pointer;
+                                 }
+                                 a{
+                                   color: #000;
+                                   text-decoration: none;
+                                 }
                            }
+                           
                         }
                      }
                   }
