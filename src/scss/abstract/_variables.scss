@@ -8,6 +8,8 @@
   $primary-font--color: #000;
   $secondary-font-color: #fff;
   $font-weight-normal: 400;
+
+  // header
   .header-top{
 
     .header-sales{
@@ -76,4 +78,65 @@ header{
        }
      }
   }
+}
+
+
+// herosection
+
+.offerhero_section{
+     .subsection-menu{
+          a{
+            font-family: $primary-font-family;
+            font-weight: $font-weight-normal;
+            line-height: 24px;
+            font-size: $font-size-normal;
+            text-decoration: none;
+            color: #000;
+          }
+     }
+     .carousel{
+         .first-carousel{
+           .shop-now{
+            .apple-first{
+              p{
+                color: $secondary-font-color;
+                position: relative;
+                top: 20px;
+                font-size: $font-size-normal;
+                font-family: $primary-font-family;
+                font-weight: $font-weight-normal;
+                font-style: normal;
+                line-height: 24px;
+              }
+              
+             }
+             .upto{
+              padding-left: 4em;
+                 h2{
+                  color: $secondary-font-color;
+                  font-weight: 600;
+                  font-family: $primary-font-family;
+                  line-height: 60px;
+                  font-style: normal;
+                  font-size: 2.5rem;
+                  text-align: left;
+                 }
+             }
+             .shop{
+                  a{
+                    color: $secondary-font-color;
+                    text-decoration: none;
+                    font-family: $primary-font-family;
+                    font-size: $font-size-normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                  }
+                  a:hover{
+                    border-bottom: 1px solid #fff;
+                    
+                  }
+             }
+           }
+         }
+     }
 }
