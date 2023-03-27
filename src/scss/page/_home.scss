@@ -57,5 +57,65 @@
 }
 .main-deal{
     max-width: 1170px;
-    margin: 0% auto;
+    margin: 140px auto 140px auto;
+        
+           .today-title{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+                    .today-div{
+                         width: 2%;
+                         height: 70px;
+                         background-color: #DB4444;
+                         border-radius: 5px;
+                    }
+           }
+           .flash-sales-section{
+            display: flex;
+            gap: 4rem;
+            margin-top: 1.5rem;
+             }
+              .imageSales-slider{
+                   .slider-image-one, .slider-image-two, .slider-image-three, .slider-image-four{
+                    background-color: #f5f5f5;
+                    padding: 2.1em 2.5em;
+                    img{
+                        width: 150px;
+                        height: 120px;
+                        object-fit: fill;
+                    }
+                   }
+              }
+
+
+                 .sales-slider{
+                       .imageSales-slider{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 2.5em;
+                       }
+                 }
+                 .ratings{
+                    display: flex;
+                    align-items: center;
+                 }
+                 .view-products{
+                    background-color: #DB4444;
+                    margin-top: 4em;
+                    width: 25%;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 1em 3em;
+                    a{
+                        text-align: center;
+                        text-decoration: none;
+                        color: #f5f5f5;
+                        font-family: "Poppins", sans-serif;
+                        line-height: 24px;
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                 }
 }
