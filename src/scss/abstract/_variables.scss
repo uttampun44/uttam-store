@@ -8,6 +8,7 @@
   $primary-font--color: #000;
   $secondary-font-color: #fff;
   $font-weight-normal: 400;
+  $font-items-color: #DB4444;
 
   // header
   .header-top{
@@ -139,4 +140,106 @@ header{
            }
          }
      }
+}
+
+
+// main deal section
+
+.main-deal{
+       .today-title{
+            .todays{
+                  h3{
+                    color: $font-items-color;
+                    line-height: 20px;
+                    font-weight: 600;
+                    font-family: $secondary-font-family;
+                  }
+            }
+       }
+
+       .flash-sales-section{
+        .flash-sales{
+             h4{
+                 font-family: $primary-font-family;
+                 color: $primary-font--color;
+                 font-weight: 600;
+                 font-size: 2.1rem;
+             }
+        }
+        .time{
+             .display-date{
+                span{
+                    font-family: $secondary-font-family;
+                    font-size: .8rem;
+                    font-weight: 600;
+                    line-height: 18px;
+                }
+             }
+             .display-time{
+                 span{
+                     font-size: 2.1rem;
+                     font-family: $primary-font-family;
+                     color: $primary-font--color;
+                     font-weight: 600;
+                     line-height: 30px;
+                 }
+             }
+        }
+   }
+
+      .sales-slider{
+        .slider-one, .slider-two, .slider-three, .slider-four{
+          .add-to-cart{
+            background-color: $primary-font--color;
+            text-align: center;
+            padding: .7em 0%;
+              a{
+                font-family: $secondary-font-family;
+                font-size: $font-size-normal;
+                font-weight: 500;
+                line-height: 24px;
+                color: #fff;
+                text-decoration: none;
+                cursor: pointer;
+              }
+          }
+         }
+         .description{
+          margin-top: 1em;
+         p{
+          padding-top: .3em;
+          font-family: $secondary-font-family;
+          line-height: 24px;
+          font-weight: 500;
+          font-size: $font-size-normal;
+          color: $primary-font--color
+         };
+         span{
+           padding-top: .3em;
+           text-decoration: line-through;
+           color: $primary-font--color;
+           font-family: $secondary-font-family;
+           font-weight: 500;
+           line-height: 24px;
+           font-size: $font-size-normal;
+         }
+         p:nth-child(2){
+          font-family: $secondary-font-family;
+          line-height: 24px;
+          font-weight: 500;
+          font-size: $font-size-normal;
+          color: $font-items-color;
+         }
+       }
+       .ratings{
+        span{
+          color: $primary-font--color;
+          font-family: $secondary-font-family;
+          font-weight: 500;
+          line-height: 24px;
+          font-size: $font-size-normal;
+          text-decoration: none;
+        }
+       }
+      }
 }

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import StarIcon from '@mui/icons-material/Star';
 
 function Home() {
   return (
@@ -109,19 +110,95 @@ function Home() {
           <section>
                <div className='main-deal'>
                     <div className='today-title'>
-                          <h3>Today's</h3>
+                         <div className='today-div'></div>
+                         <div className='todays'> <h3>Today's</h3></div>
                     </div>
                     <div className='flash-sales-section'>
                         <div className='flash-sales'>
                              <h4>Flash sales</h4>
                         </div>
                         <div className='time'>
-
-                        </div>
-                        <div className='sales-slider'>
-
+                           <div className='display-date'>
+                                  <span>Days &nbsp; &nbsp; &nbsp; &nbsp; </span><span>Hours  &nbsp; &nbsp; &nbsp; &nbsp; </span><span>Minutes  &nbsp; &nbsp; &nbsp; &nbsp; </span><span>seconds  &nbsp; &nbsp; &nbsp; &nbsp;</span>   
+                           </div>
+                           <div className='display-time'>
+                                <span>03 :</span> <span>23 :</span> <span>19 :</span> <span> &nbsp;20</span>
+                           </div>
                         </div>
                     </div>
+
+                    <div className='sales-slider'>
+                                 <div className='imageSales-slider'>
+                                   <div className='slider-one'>
+                                      <div className='slider-image-one'>
+                                          <img src='/src/assets/remote.png'/> 
+                                      </div>
+                                      <div className='add-to-cart'>
+                                              <Link>Add to cart</Link>
+                                          </div> 
+                                         
+                                          <div className='description'>
+                                             <p>HAVIT HV-692 Gamepad</p>
+                                             <p>$120 <span>$160</span></p>
+                                              <div className='ratings'>
+                                               <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <span>(88)</span>
+                                              </div>
+                                         </div>  
+                                   </div>
+
+                                   <div className='slider-two'>
+                                      <div className='slider-image-two'>
+                                          <img src='/src/assets/gamekeyboard.png'/>
+                                      </div>
+
+                                      <div className='add-to-cart'>
+                                              <Link>Add to cart</Link>
+                                          </div>  
+                                          <div className='description'>
+                                             <p>Ak-900 Wired Keyboard</p>
+                                             <p>$960 <span>$1160</span></p>
+                                              <div className='ratings'>
+                                               <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#000'}}/> <span>(88)</span>
+                                              </div>
+                                         </div>  
+                                   </div>
+
+                                   <div className='slider-three'>
+                                      <div className='slider-image-one'>
+                                          <img src='/src/assets/gamemonitor.png'/>  
+                                      </div>
+                                      <div className='add-to-cart'>
+                                              <Link>Add to cart</Link>
+                                          </div>  
+                                          <div className='description'>
+                                             <p>IPS LCD Gaming Monitor</p>
+                                             <p>$370 <span>$400</span></p>
+                                              <div className='ratings'>
+                                               <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <span>(88)</span>
+                                              </div>
+                                         </div>  
+                                   </div>
+
+                                   <div className='slider-four'>
+                                      <div className='slider-image-one'>
+                                          <img src='/src/assets/chair.png'/>  
+                                      </div>
+                                      <div className='add-to-cart'>
+                                              <Link>Add to cart</Link>
+                                          </div>  
+                                          <div className='description'>
+                                             <p>S Series Conmfor Chair</p>
+                                             <p>$375 <span>$400</span></p>
+                                              <div className='ratings'>
+                                               <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <span>(88)</span>
+                                              </div>
+                                         </div>  
+                                   </div>
+                                  </div>
+                        </div>
+                        <div className='view-products'>
+                            <Link>View All Products</Link>
+                        </div>
                </div>
           </section>
     </div>
