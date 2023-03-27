@@ -188,58 +188,40 @@ header{
    }
 
       .sales-slider{
-        .slider-one, .slider-two, .slider-three, .slider-four{
-          .add-to-cart{
+        .singleproduct{
+          .addto-cart{
             background-color: $primary-font--color;
             text-align: center;
             padding: .7em 0%;
-              a{
+            
+          }
+          .description{
+            margin-top: 1em;
+            p{
+              font-family: $secondary-font-family;
+              font-size: $font-size-normal;
+              font-weight: 600;
+              line-height: 24px;
+              color: #000;
+            }
+          }
+          .price{
+              p{
                 font-family: $secondary-font-family;
                 font-size: $font-size-normal;
-                font-weight: 500;
+                font-weight: 600;
                 line-height: 24px;
-                color: #fff;
-                text-decoration: none;
-                cursor: pointer;
+                color: $font-items-color;
+              }
+              span{
+                 color: $primary-font--color;
+                 font-family: $secondary-font-family;
+                font-size: $font-size-normal;
+                font-weight: 600;
+                line-height: 24px;
+                text-decoration: line-through;
               }
           }
          }
-         .description{
-          margin-top: 1em;
-         p{
-          padding-top: .3em;
-          font-family: $secondary-font-family;
-          line-height: 24px;
-          font-weight: 500;
-          font-size: $font-size-normal;
-          color: $primary-font--color
-         };
-         span{
-           padding-top: .3em;
-           text-decoration: line-through;
-           color: $primary-font--color;
-           font-family: $secondary-font-family;
-           font-weight: 500;
-           line-height: 24px;
-           font-size: $font-size-normal;
-         }
-         p:nth-child(2){
-          font-family: $secondary-font-family;
-          line-height: 24px;
-          font-weight: 500;
-          font-size: $font-size-normal;
-          color: $font-items-color;
-         }
-       }
-       .ratings{
-        span{
-          color: $primary-font--color;
-          font-family: $secondary-font-family;
-          font-weight: 500;
-          line-height: 24px;
-          font-size: $font-size-normal;
-          text-decoration: none;
-        }
-       }
       }
 }

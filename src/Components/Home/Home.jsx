@@ -1,12 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../Header/header'
 import { Link } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import StarIcon from '@mui/icons-material/Star';
+import product from '../../Single prdocut/Product';
+import styled from 'styled-components';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 function Home() {
+
+
+const Button =styled(Link)`
+    
+    font-weigth: 500;
+    text-align: center;
+    color: #fff;
+    background-color: ${props => props.primary ? "#000" : "#DB4444"};
+    font-style: normal;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 24px;
+    font-size 1rem;
+`;
+
   return (
     <div>
           <Header />
@@ -128,76 +146,40 @@ function Home() {
                     </div>
 
                     <div className='sales-slider'>
-                                 <div className='imageSales-slider'>
-                                   <div className='slider-one'>
-                                      <div className='slider-image-one'>
-                                          <img src='/src/assets/remote.png'/> 
-                                      </div>
-                                      <div className='add-to-cart'>
-                                              <Link>Add to cart</Link>
-                                          </div> 
-                                         
-                                          <div className='description'>
-                                             <p>HAVIT HV-692 Gamepad</p>
-                                             <p>$120 <span>$160</span></p>
-                                              <div className='ratings'>
-                                               <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <span>(88)</span>
-                                              </div>
-                                         </div>  
-                                   </div>
+                                  {
 
-                                   <div className='slider-two'>
-                                      <div className='slider-image-two'>
-                                          <img src='/src/assets/gamekeyboard.png'/>
-                                      </div>
+                                    product.slice(0, 4).map((singleItem) =>{
+                                        return(
+                                            <div key={singleItem.id}>
+                                                  <div className='singleproduct'>
+                                                       <div className='product-details'>
+                                                            <div className='product-image'>
+                                                                 <img src={singleItem.image}/>
+                                                                 <div className='whistlist'>
+                                                                     <FavoriteIcon style={{color: '#DB4444',}}/>
+                                                                 </div>
+                                                            </div>
 
-                                      <div className='add-to-cart'>
-                                              <Link>Add to cart</Link>
-                                          </div>  
-                                          <div className='description'>
-                                             <p>Ak-900 Wired Keyboard</p>
-                                             <p>$960 <span>$1160</span></p>
-                                              <div className='ratings'>
-                                               <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#000'}}/> <span>(88)</span>
-                                              </div>
-                                         </div>  
-                                   </div>
-
-                                   <div className='slider-three'>
-                                      <div className='slider-image-one'>
-                                          <img src='/src/assets/gamemonitor.png'/>  
-                                      </div>
-                                      <div className='add-to-cart'>
-                                              <Link>Add to cart</Link>
-                                          </div>  
-                                          <div className='description'>
-                                             <p>IPS LCD Gaming Monitor</p>
-                                             <p>$370 <span>$400</span></p>
-                                              <div className='ratings'>
-                                               <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <span>(88)</span>
-                                              </div>
-                                         </div>  
-                                   </div>
-
-                                   <div className='slider-four'>
-                                      <div className='slider-image-one'>
-                                          <img src='/src/assets/chair.png'/>  
-                                      </div>
-                                      <div className='add-to-cart'>
-                                              <Link>Add to cart</Link>
-                                          </div>  
-                                          <div className='description'>
-                                             <p>S Series Conmfor Chair</p>
-                                             <p>$375 <span>$400</span></p>
-                                              <div className='ratings'>
-                                               <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <StarIcon style={{color: '#FFAD33'}}/> <span>(88)</span>
-                                              </div>
-                                         </div>  
-                                   </div>
-                                  </div>
+                                                            <div className='addto-cart'>
+                                                              
+                                                              <Button primary to='/addtocart'>Add To Cart</Button>
+                                                            </div>
+                                                            <div className='description'>
+                                                                 <p>{singleItem.productName}</p>
+                                                            </div>
+                                                            <div className='price'>
+                                                                  <p>{singleItem.price} &nbsp; &nbsp;<span>{singleItem.realPrice}</span></p>
+                                                                  <p>{singleItem.ratings}</p>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                            </div>
+                                        )
+                                    })
+                                  }
                         </div>
                         <div className='view-products'>
-                            <Link>View All Products</Link>
+                            <Button to='/addtocart'>View All Products</Button>
                         </div>
                </div>
           </section>
