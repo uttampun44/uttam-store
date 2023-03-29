@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import product from '../../Single prdocut/Product';
+import product from '../../Singleproduct/Product';
 import styled from 'styled-components';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
