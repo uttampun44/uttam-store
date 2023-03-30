@@ -1,0 +1,49 @@
+footer{
+    background-color: #000;
+    .footer-name{
+        padding: 3.8em 8.2em;
+        .footer-menu{
+               display: flex;
+               justify-content: space-between;
+               max-width: 1179px;
+               margin-left: auto;
+               margin-right:  auto;
+                .support-details, .my-account-details, .links, .app-images{
+                   display: grid;
+                   row-gap: 1.3em;
+                   margin-top: 1.2em;
+
+                      .social-media-icon{
+                          display: flex;
+                          justify-content: space-between;
+                      }
+                  
+               }
+               .uttam-store-footer{
+                   margin-top: 0%;
+
+                   .subscribe{
+                    display: grid;
+                    row-gap: 1.3em;
+                     margin-top: 1.2em;
+                     .email{
+                        position: relative;
+                        input[type="text"]{
+                            padding: .8em 1em;
+                            border: 1.5px solid #FAFAFA;
+                            border-radius: 4px;
+                            background-color: #000;
+                       }
+                     }
+                   }
+               }
+        }
+    }
+    .copyrights{
+        border-top:  1px solid #FAFAFA;
+        padding: 1em 0em;
+        display: flex;
+        justify-content: center;
+        gap: .5rem;
+    }
+}

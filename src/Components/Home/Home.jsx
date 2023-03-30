@@ -7,8 +7,10 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import product from '/src/Singleproduct/Product';
 import styled from 'styled-components';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import Featured from '../Featured Section/Featured';
+import Featured from '../Featuredsection/Featured';
 import Footer from '../Footer/Footer';
+
+
 
 function Home() {
 
