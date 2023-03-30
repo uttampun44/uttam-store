@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import product from '../../Singleproduct/Product';
+import product from '/src/Singleproduct/Product';
 import styled from 'styled-components';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import Featured from '../Featured Section/Featured';
+import Footer from '../Footer/Footer';
 
 function Home() {
 
@@ -183,6 +185,10 @@ const Button =styled(Link)`
                         </div>
                </div>
           </section>
+
+          <Featured />
+
+          <Footer />
     </div>
   )
 }
