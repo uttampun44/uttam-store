@@ -1,0 +1,49 @@
+.login-form-section{
+     padding: 4.5vw 9.9vw 11vw 0vw;
+     display: flex;
+     align-items: center;
+        
+       .login-image{
+           flex: .6;
+               img{
+                   width: 100%;
+                   object-fit: fill;
+               }
+       }
+         .login-form-design{
+            flex: .4;
+            padding: 8vw 0em 8vw 9vw;
+               .inputs-field  {
+                    display: grid;
+                    row-gap: 3vw;
+                    margin-top: 3.5vw;
+
+                    input{
+                        border: none;
+                        border-bottom: 1px solid #000;
+                        padding: .7vw 0vw;
+                    }
+                    input:focus{
+                        outline: none;
+                    }
+               }
+
+               .forget-password{ 
+                     margin-top: 3vw;
+                     display: flex;
+                     align-items: center;
+                     width: 65%;
+                     justify-content: space-between;
+                     .login {
+                           background-color: #DB4444;
+                           padding: 1vw 2.5vw;
+                     }
+               }
+         }
+}
+
+@media (min-width: 1440px) {
+     .inputs-field{
+          width: 65%;
+     }
+}
