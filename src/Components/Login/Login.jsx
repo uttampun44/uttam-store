@@ -12,6 +12,7 @@ function Login() {
      font-size: 1.1vw;
      line-height: 24px;
      `;
+
   return (
     <div>
             <Header />
@@ -26,14 +27,14 @@ function Login() {
                                 <p>Enter your details below</p>
                              </div>
                             <div>
-                              <form>
+                              <form method='post'>
                                 <div className='inputs-field'>
                                     <input type='text' name='email' required placeholder='Email or phone number'/>
                                      <input type='password' name='password' required placeholder='Password'/>
                                  </div>
                               <div className='forget-password'>
                                    <div className='login'>
-                                     <Button to='/' primary type='submit'>Login</Button>
+                                     <input to='/' primary type='submit' value="Login" style={{fontSize: '1.1rem', fontWeight: '500'}}/>
                                  </div>
                                  
                                   <div>
