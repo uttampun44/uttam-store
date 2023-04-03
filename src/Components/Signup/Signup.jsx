@@ -40,9 +40,9 @@ function Singup() {
                      <h6>Create an account</h6>
                       <p>Enter you details below</p>
                       <div className='form-design'>
-                         <input placeholder='Name' type='text' name='username' onChange={userInput}/>
-                         <input placeholder='Email or Phone Number' type='text' name='email' onChange={userInput}/>
-                         <input placeholder='Password' type='password' name='password' onChange={userInput} />
+                         <input placeholder='Name' type='text' name='username' onChange={userInput} required/>
+                         <input placeholder='Email or Phone Number' type='text' name='email' onChange={userInput} required/>
+                         <input placeholder='Password' type='password' name='password' onChange={userInput} required/>
                       </div>
 
                       <div className='create-account-google'>
