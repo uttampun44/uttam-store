@@ -420,13 +420,16 @@ header{
   .create-account-google{
          
     .create-account{
-              a{
+              input{
                  text-decoration: none;
                  line-height: 24px;
                  font-size: $font-size-normal;
                  font-weight: 500;
                  font-family: $secondary-font-family;
                  color: $secondary-font-color;
+                 background: none;
+                 border: none;
+                 cursor: pointer;
          }
   }
 

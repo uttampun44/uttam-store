@@ -16,7 +16,7 @@ function Login() {
     <div>
             <Header />
                   <div className='login-form-section'>
-                        <form method='post'>
+                       
                         <div className='login-image'>
                           <img src='/src/assets/createaccountimage.jpg'/>
                       </div>
@@ -25,20 +25,24 @@ function Login() {
                                 <p>Login to Uttam Store</p>
                                 <p>Enter your details below</p>
                              </div>
-                             <div className='inputs-field'>
-                                 <input type='text' name='email' required placeholder='Email or phone number'/>
-                                 <input type='password' name='password' required placeholder='Password'/>
-                             </div>
-                             <div className='forget-password'>
-                               <div className='login'>
-                                  <Button to='/' primary type='submit'>Login</Button>
-                               </div>
+                            <div>
+                              <form>
+                                <div className='inputs-field'>
+                                    <input type='text' name='email' required placeholder='Email or phone number'/>
+                                     <input type='password' name='password' required placeholder='Password'/>
+                                 </div>
+                              <div className='forget-password'>
+                                   <div className='login'>
+                                     <Button to='/' primary type='submit'>Login</Button>
+                                 </div>
+                                 
                                   <div>
-                                  <Button to='/'>Forget Password</Button>
+                                     <Button to='/'>Forget Password</Button>
                                   </div>
+                              </div>
+                              </form>
                              </div>
                       </div>
-                        </form>
                   </div>
             <Footer />
     </div>
