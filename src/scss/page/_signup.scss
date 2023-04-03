@@ -37,7 +37,7 @@
        .create-account{
            padding: 1.3vw 0vw;
            background-color: #DB4444;
-           input{
+           input [type="submit"]{
               display: flex;
               justify-content: center;
            }
