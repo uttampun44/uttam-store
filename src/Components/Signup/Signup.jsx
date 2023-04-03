@@ -36,7 +36,8 @@ function Singup() {
                  </div>
 
                  <div className='form'>
-                      <h6>Create an account</h6>
+                     <form method='post' action='../Login/Login.jsx'>
+                     <h6>Create an account</h6>
                       <p>Enter you details below</p>
                       <div className='form-design'>
                          <input placeholder='Name' type='text' name='username' onChange={userInput}/>
@@ -46,7 +47,7 @@ function Singup() {
 
                       <div className='create-account-google'>
                          <div className='create-account'>
-                             <Link to='/createaccount' onClick={createAccount}>Create Account</Link>
+                             <Link to='/createaccount' onClick={createAccount} type='submit'>Create Account</Link>
                          </div>
                          
                          <div className='google-signup'>
@@ -58,6 +59,7 @@ function Singup() {
                              <Link to='/login'>Login</Link>
                          </div>
                       </div>
+                     </form>
                  </div>
              </div>
          <Footer />

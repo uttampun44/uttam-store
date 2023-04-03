@@ -16,7 +16,8 @@ function Login() {
     <div>
             <Header />
                   <div className='login-form-section'>
-                      <div className='login-image'>
+                        <form method='post'>
+                        <div className='login-image'>
                           <img src='/src/assets/createaccountimage.jpg'/>
                       </div>
                       <div className='login-form-design'>
@@ -30,13 +31,14 @@ function Login() {
                              </div>
                              <div className='forget-password'>
                                <div className='login'>
-                                  <Button to='/' primary>Login</Button>
+                                  <Button to='/' primary type='submit'>Login</Button>
                                </div>
                                   <div>
                                   <Button to='/'>Forget Password</Button>
                                   </div>
                              </div>
                       </div>
+                        </form>
                   </div>
             <Footer />
     </div>
