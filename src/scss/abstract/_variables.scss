@@ -421,7 +421,6 @@ header{
          
     .create-account{
               input{
-                 text-decoration: none;
                  line-height: 24px;
                  font-size: $font-size-normal;
                  font-weight: 500;
@@ -430,6 +429,9 @@ header{
                  background: none;
                  border: none;
                  cursor: pointer;
+         }
+         input[type="submit"]{
+              text-align: center;
          }
   }
 

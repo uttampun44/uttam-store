@@ -40,7 +40,7 @@ function Singup() {
 
                       <div className='create-account-google'>
                          <div className='create-account'>
-                            <input onClick={createAccount} type='submit' />
+                            <input onClick={createAccount} type='submit' value="Create Account"/>
                          </div>
                          
                          <div className='google-signup'>
