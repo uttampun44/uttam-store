@@ -18,13 +18,6 @@ function Singup() {
   const createAccount = (e) =>{
       console.log("submit")
      setUser({username : '', email: '', passoword: ''})
-   
-     if(user.email.length < 11){
-        alert("phone number digits is 10")
-     }else{
-       alert("must include 10 numbers")
-       e.preventDefault();
-     }
   }
 
   return (
@@ -40,14 +33,14 @@ function Singup() {
                      <h6>Create an account</h6>
                       <p>Enter you details below</p>
                       <div className='form-design'>
-                         <input placeholder='Name' type='text' name='username' onChange={userInput} required />
-                         <input placeholder='Email or Phone Number' type='text' name='email' onChange={userInput} required />
-                         <input placeholder='Password' type='password' name='password' onChange={userInput} required />
+                         <input placeholder='Name' type='text' name='username' onChange={userInput}  required/>
+                         <input placeholder='Email or Phone Number' type='text' name='email' onChange={userInput} required/>
+                         <input placeholder='Password' type='password' name='password' onChange={userInput}  required/>
                       </div>
 
                       <div className='create-account-google'>
                          <div className='create-account'>
-                             <Link to='/createaccount' onClick={createAccount} type='submit'>Create Account</Link>
+                            <input onClick={createAccount} type='submit' />
                          </div>
                          
                          <div className='google-signup'>
