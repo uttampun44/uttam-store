@@ -37,6 +37,12 @@
                      .login {
                            background-color: #DB4444;
                            padding: 1vw 2.5vw;
+                           input{
+                            background: none;
+                            color: #fff;
+                            border: none;
+                            cursor: pointer;
+                           }
                      }
                }
          }

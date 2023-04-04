@@ -37,6 +37,10 @@
        .create-account{
            padding: 1.3vw 0vw;
            background-color: #DB4444;
+           input [type="submit"]{
+              display: flex;
+              justify-content: center;
+           }
        }
        .already-account{
            display: flex;
@@ -44,6 +48,16 @@
            gap: 1rem;
            justify-content: center;
            width: 65%;
+       }
+       .google-signup{
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        margin-top: 1em;
+        justify-content: center;
+        gap: 0.5em;
+        border: 1px solid #000;
+        padding: 1.2vw 0vw;
        }
 }
 @media screen and (min-width: 1440px){
