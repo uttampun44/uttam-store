@@ -489,104 +489,103 @@ header{
       }
 
 
-      // aboutpage
+      // contact page
 
-.aboutpage-hero{
-       .aboutpage-title{
-           p{
-              font-family: $primary-font-family;
-              font-weight: 500;
-              line-height: 7vw;
-              color: $primary-font--color;
-              font-size: 5.3vw;
+
+.contact-section{
+      
+   .call-write-us{
+
+         .call-img{
+                p{
+                   font-family: $secondary-font-family;
+                   line-height: 24px;
+                   font-size: $font-size-normal;
+                   font-weight: 600;
+              }
            }
-           .description{
-               padding-right: 4vw;
-               p{
+             .available{
+                p{
                    font-family: $secondary-font-family;
                    font-weight: $font-weight-normal;
-                   line-height: 24px;
-                   color: $primary-font--color;
                    font-size: $font-size-normal;
-                   min-width: fit-content;
-               }
-           }
+                   line-height: 24px;
+             }
+         }
+
+         .write-us{
+              .write-img{
+                  p{
+                     font-family: $secondary-font-family;
+                     line-height: 24px;
+                     font-size: $font-size-normal;
+                     font-weight: 600;
+              }
+          }
+          
+          .emaildetails{
+                p{
+                   font-family: $secondary-font-family;
+                   font-weight: $font-weight-normal;
+                   font-size: $font-size-normal;
+                   line-height: 24px;
+             }
+          }
+        }
        }
-} 
-
-.sales-goals{
-         .sales, .monthly-sales, .customer-active, .annual-goals{
-                 
-            display: grid;
-            justify-items: center;
-            row-gap: 1vw;
-            img{
-               margin-bottom: 1vw;
+       .sendmessage-section{
+  
+        .name-email-phone{
+          
+                input[type="text"], input[type="email"]{
+                            font-family: $secondary-font-family;
+                            font-size: $font-size-normal;
+                            font-weight: $font-weight-normal;
+                            line-height: 24px;
+                            color: $primary-font--color;
+                            opacity: .5;
+                            outline: none;
+                            border: none;
+                            background: #FAFAFA;
+                            padding: .5vw;
+                        }
+               }
+  
+      .message{
+           .message-textarea{
+                    height: 30vh;
+                      
+                    textarea{     
+                             height: 100%;
+                            font-family: $secondary-font-family;
+                            font-size: $font-size-normal;
+                            font-weight: $font-weight-normal;
+                            line-height: 24px;
+                            color: $primary-font--color;
+                            opacity: .5;
+                            outline: none;
+                            border: none;
+                            background: #FAFAFA;
+                            padding: .5vw;
+                  }
+             }
+  
+        .send-message{
+                 input[type="submit"]{
+                       padding: 1vw 2.5vw;
+                       background: $font-items-color;
+                       font-family: $secondary-font-family;
+                       font-size: $font-size-normal;
+                       font-weight: $font-weight-normal;
+                       line-height: 24px;
+                       color: $secondary-font-color;
+                       outline: none;
+                       border: none;
+                       cursor: pointer;
             }
-            p{
-                font-size: 2.7vw;
-                font-family: $primary-font-family;
-                font-weight: 700;
-                font-style: normal;
-                line-height: 30px;
-            }
-            p:last-child{
-               font-size:  14px;
-               font-weight: $font-weight-normal;
-               line-height: 24px;
-               font-family: $secondary-font-family;
-               min-height: max-content;
-            }
-         }
-         .sales:hover, .monthly-sales:hover, .customer-active:hover, .annual-goals:hover{
-            background-color: #DB4444;
-            p{
-              color: $secondary-font-color;
-            }
-         }
-}
-
-
-// comployee employee
-.our-team{
-  .chairman-details, .designer-details, .director-details{
-    padding-top: 1vw;
-     p:first-child{
-         font-size: 2rem;
-         font-family: $primary-font-family;
-         font-weight: 500;
-         line-height: 40px;
-         font-style: normal;
-     }
-     p{
-        font-weight: $font-size-normal;
-        font-family: $secondary-font-family;
-        font-style: normal;
-        line-height: 24px;
-        margin-top: .5vw;
-        margin-bottom: .5vw;
-     }
+        }
+    }
   }
+      
 }
 
-.customer-service-block{
-       .fast-and-free, .customer-support, .moneyback{
-            display: grid;
-            row-gap: .7vw;  
-            text-align: center;   
-        p:first-child{
-           font-family: $secondary-font-family;
-           font-style: normal;
-           font-weight: 600;
-           font-size: 1.5rem;
-           line-height: 24px;
-           text-transform: capitalize;
-        }
-        p{
-          font-weight: $font-size-normal;
-          font-family: $secondary-font-family;
-          font-style: normal;
-          line-height: 24px;
-        }
-      }
-}
