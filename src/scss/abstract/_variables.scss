@@ -9,6 +9,7 @@
   $secondary-font-color: #fff;
   $font-weight-normal: 400;
   $font-items-color: #DB4444;
+  $line-height: 1.5rem;
 
   // header
   .header-top{
@@ -220,11 +221,84 @@ header{
                 font-weight: 600;
                 line-height: 24px;
                 text-decoration: line-through;
+                opacity: .5;
               }
           }
          }
       }
 }
+
+  //  best selling products
+
+  .selling-section{
+        .this-month{
+              .this-month-title{
+                   p{
+                       font-family: $secondary-font-family;
+                       font-size: $font-size-normal;
+                       font-weight: 600;
+                       color: $font-items-color;
+                       line-height: 24px;
+                   }
+              }
+        }
+
+        .best-selling-products{
+            p{
+                font-size: 2.1rem;
+                font-family: $primary-font-family;
+                font-weight: 600;
+                line-height: 48px;
+            }
+              
+            .selling-viewall{
+                 background-color: $font-items-color;
+                 padding: 1vw 3.5vw;
+                 a{
+                     font-family: $secondary-font-family;
+                     font-weight: $font-size-normal;
+                     font-weight: 500;
+                     line-height: 24px;
+                     color: #fff;
+                     text-decoration: none;
+                 }
+            }
+        }
+
+        .selling-product-description{
+             margin-top: 1vw;
+             p{
+                  font-family: $secondary-font-family;
+                  font-size: $font-size-normal;
+                  font-weight: 600;
+                  line-height: 24px;
+                  color: #000;
+             }
+             p:last-child{
+              font-family: $secondary-font-family;
+              font-size: $font-size-normal;
+              font-weight: 600;
+              line-height: 24px;
+              color: #DB4444;
+             }
+             span{
+                 text-decoration: line-through;
+                 color: $primary-font--color;
+                 opacity: .5;
+                 font-family: $secondary-font-family;
+                 font-size: $font-size-normal;
+                 font-weight: 600;
+                 line-height: 24px;
+             }
+        }
+        .add-to-cart{
+             a{
+                 color: $secondary-font-color;
+                 font-family: $secondary-font-family;
+                 text-decoration: none;
+             }
+        }
+  }
 
 // featured section
 
@@ -383,9 +457,249 @@ header{
         font-family: $secondary-font-family;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: $line-height;
       }
    }
+
+// music-experience-section
+.music_experience_section{
+          .music-description-row{
+                .music-descripton-grid{
+                     .categories{
+                         p{
+                             color: #00FF66;
+                             font-size: $font-size-normal;
+                             font-weight: 600;
+                             line-height: $line-height;
+                             font-style: normal;
+                             font-family: $secondary-font-family;
+                         }
+                     }
+                     .enhance-music{
+                            #enhance{
+                                    color: $secondary-font-color;
+                                    font-size: 4vw;
+                                    font-family: $primary-font-family;
+                                    line-height: 90px;
+                                   font-weight: 600;
+                                   font-style: normal;
+                        }
+                           .offer_til_valid{
+                              .days, .hours, .minutes, .seconds{
+                                 p{ 
+                                   font-family: $secondary-font-family;
+                                    font-size: $font-size-normal;
+                                    font-weight: 600;
+                                    line-height: $line-height;
+                                    color: $primary-font--color;
+                                 }
+                                 span{
+                                       font-family: $secondary-font-family;
+                                       font-size: $font-size-normal;
+                                       font-weight: 600;
+                                       line-height: $line-height;
+                                       color: $primary-font--color
+                                 }
+                              }
+                           }
+                     }
+                     .buy-now{
+                         a{
+                             font-family: $secondary-font-family;
+                              font-size: $font-size-normal;
+                              font-weight: 600;
+                              line-height: $line-height;
+                             color: $secondary-font-color;
+                             text-decoration: none;
+                         }
+                     }
+                }
+          }
+}
+
+
+// explore our products section
+.explore-our-products{
+          .our-products-title-row{
+              
+               .our-products{
+                    p{
+                        font-size: $font-size-normal;
+                        font-weight: 600;
+                        color: $font-items-color;
+                        font-family: $secondary-font-family;
+                        line-height: $line-height;
+                    }
+               }
+          }
+
+          .explore-product-heading-row{
+                  h6{
+                       font-size: 2.1rem;
+                       font-family: $primary-font-family;
+                       font-weight: 600;
+                       line-height: 48px;
+                  }
+                  .explore-data-grid{
+                       .add-to-cart{
+                          a{
+                            color: $secondary-font-color;
+                            font-family: $secondary-font-family;
+                            text-decoration: none;
+                          }
+                       }
+                       .explore-product-details{
+                        p{
+                          font-family: $secondary-font-family;
+                          font-size: $font-size-normal;
+                          font-weight: 600;
+                          line-height: 24px;
+                          color: #000;
+                     }
+                     p:last-child{
+                      font-family: $secondary-font-family;
+                      font-size: $font-size-normal;
+                      font-weight: 600;
+                      line-height: 24px;
+                      color: #DB4444;
+                     }
+                     span{
+                         text-decoration: line-through;
+                         color: $primary-font--color;
+                         opacity: .5;
+                         font-family: $secondary-font-family;
+                         font-size: $font-size-normal;
+                         font-weight: 600;
+                         line-height: 24px;
+                     }
+                       }
+                  }
+                  .view-all-exploreproduct{
+                    background-color: #DB4444;
+                    padding: 1vw 3.5vw;
+                    max-width: 20%;
+                    margin: auto;
+                    text-align: center;
+                    border-radius: 4px;
+                       a{
+                        font-family: $secondary-font-family;
+                        font-weight: 500;
+                        line-height: $line-height;
+                        color: #fff;
+                        text-decoration: none;
+                       }
+                  }
+          }
+}
+
+// new arrival section
+.newarrival{
+        .arrivalColor{
+             .featured{
+                 p{
+                      font-size: $font-size-normal;
+                      font-weight: 600;
+                      line-height: $line-height;
+                      font-family: $secondary-font-family;
+                      color: $font-items-color;
+                 }
+             }
+        }
+        .newArrival_heading{
+            h7{
+              font-size: 2.1rem;
+              font-family: $primary-font-family;
+              font-weight: 600;
+              line-height: $line-height;
+            }
+        }
+        .newarrival_row{
+              p{
+                color: $secondary-font-color;
+              }
+        }
+        .newArrival-flex{
+              .ps-details{
+                 p:first-child{
+                  font-weight: 600;
+                  font-style: normal;
+                  line-height: 3rem;
+                  font-size: 2vw;
+                  font-family: $primary-font-family;
+                 }
+                 p{
+                  font-size: $font-size-normal;
+                  font-weight: $font-weight-normal;
+                  line-height: $line-height;
+                  font-family: $secondary-font-family;
+                  margin-top: 1vw;
+               }
+               a{
+                  text-decoration: none;
+                  color: $secondary-font-color;
+                  font-size: $font-size-normal;
+                  font-weight: $font-weight-normal;
+                  line-height: 2vw;
+                  font-family: $secondary-font-family;
+                  margin: 2vw 0vw;
+               }
+               a:hover{
+                   border-bottom: 1px solid #fff;
+               }
+              }
+        }
+        .arrival_grid{
+             .women-collection, .speakers-description, .perfume-description{
+                     p:first-child{
+                        font-weight: 600;
+                        font-style: normal;
+                        line-height: 3rem;
+                        font-size: 2vw;
+                        font-family: $primary-font-family;
+                     }
+                     p{
+                        font-size: $font-size-normal;
+                        font-weight: $font-weight-normal;
+                        line-height: $line-height;
+                        font-family: $secondary-font-family;
+                        margin-top: 1vw;
+                     }
+                     a{
+                        text-decoration: none;
+                        color: $secondary-font-color;
+                        font-size: $font-size-normal;
+                        font-weight: $font-weight-normal;
+                        line-height: 2vw;
+                        font-family: $secondary-font-family;
+                     }
+                     a:hover{
+                         border-bottom: 1px solid #fff;
+                     }
+             }
+        }
+}
+
+// customer service seciton
+.customer-service-row{
+     .service{
+        .fast-free, .customer-service, .money-back{
+         
+           p{
+              text-transform: capitalize;
+              font-size: 1.5vw;
+              font-weight: 600;
+              font-family: $secondary-font-family;
+              line-height: 2.3vw;
+           }
+           p:last-child{
+               font-size: $font-size-normal;
+               font-weight: $font-weight-normal;
+               font-style: normal;
+               font-family: $secondary-font-family;
+               line-height: $line-height;
+           }
+        }
+     }
 
   //  signupfrom 
 
