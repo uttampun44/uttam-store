@@ -6,7 +6,7 @@
           margin: 0% auto;
           display: flex;
           justify-content: space-between;
-          padding: 1em 0em;
+          padding: 1.2vw 0em;
 
           .select-language{
             background-color: none;
@@ -17,7 +17,7 @@
 
 
 header{
-  padding: 2.3em 0em 1.5em 0em;
+  padding: 2.5vw 0vw 1.7vw 0vw;
   border-bottom: 1px solid #000;
     .header-top{
          color: #000;
@@ -35,7 +35,7 @@ header{
                         .home-contact-signup{
                             ul{
                                display: flex;
-                               gap: 2.5em;
+                               gap: 2.7vw;
                              li{
                                 list-style: none;
                                 a:hover{
