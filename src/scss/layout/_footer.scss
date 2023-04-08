@@ -1,7 +1,7 @@
 footer{
     background-color: #000;
     .footer-name{
-        padding: 4vw 0vw;
+        padding: 3.8em 8.2em;
         .footer-menu{
                display: flex;
                justify-content: space-between;
@@ -11,7 +11,7 @@ footer{
                 .support-details, .my-account-details, .links, .app-images{
                    display: grid;
                    row-gap: 1.3em;
-                   margin-top: 1.5vw;
+                   margin-top: 1.2em;
 
                       .social-media-icon{
                           display: flex;
@@ -25,11 +25,11 @@ footer{
                    .subscribe{
                     display: grid;
                     row-gap: 1.3em;
-                     margin-top: 1.6vw;
+                     margin-top: 1.2em;
                      .email{
                         position: relative;
                         input[type="text"]{
-                            padding: 1vw 1.2vw;
+                            padding: .8em 1em;
                             border: 1.5px solid #FAFAFA;
                             border-radius: 4px;
                             background-color: #000;
@@ -41,9 +41,9 @@ footer{
     }
     .copyrights{
         border-top:  1px solid #FAFAFA;
-        padding: 1.2vw 0vw;
+        padding: 1em 0em;
         display: flex;
         justify-content: center;
-        gap: .7vw;
+        gap: .5rem;
     }
 }
