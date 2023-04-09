@@ -13,7 +13,7 @@ function Footer() {
           color: "#fff",
           position: 'absolute',
           right: '10%',
-          top: '20%',
+          top: '12%',
      }
 
      const socialMedia = {
@@ -38,8 +38,8 @@ function Footer() {
                      <div className='support'>
                           <p>Support</p>
                           <div className='support-details'>
-                              <p> Charkhal Rd, Kathmandu 44605</p>
-                              <p>uttamstore@gmail.com</p>
+                              <p>111 Bijoy sarani, Dhaka, <br></br> DH 1515, Bangladesh.</p>
+                              <p>exclusive@gmail.com</p>
                               <p>+88015-88888-9999</p>
                           </div>
                      </div>
