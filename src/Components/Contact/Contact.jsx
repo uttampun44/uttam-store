@@ -7,7 +7,7 @@ function Contact() {
     
     <div>
               <Header />
-                
+                {/* contact page section */}
                 <section>
                      <div className='contact-section'>
                          <div className='call-write-us'>
