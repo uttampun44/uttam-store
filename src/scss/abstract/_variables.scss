@@ -899,3 +899,101 @@ header{
    }
  }
 }
+
+// contact page fonts
+.contact-section{
+
+  .call-write-us{
+
+        .call-img{
+               p{
+                  font-family: $secondary-font-family;
+                  line-height: 24px;
+                  font-size: $font-size-normal;
+                  font-weight: 600;
+             }
+          }
+            .available{
+               p{
+                  font-family: $secondary-font-family;
+                  font-weight: $font-weight-normal;
+                  font-size: $font-size-normal;
+                  line-height: 24px;
+            }
+        }
+
+        .write-us{
+             .write-img{
+                 p{
+                    font-family: $secondary-font-family;
+                    line-height: 24px;
+                    font-size: $font-size-normal;
+                    font-weight: 600;
+             }
+         }
+
+         .emaildetails{
+               p{
+                  font-family: $secondary-font-family;
+                  font-weight: $font-weight-normal;
+                  font-size: $font-size-normal;
+                  line-height: 24px;
+            }
+         }
+       }
+      }
+      .sendmessage-section{
+
+       .name-email-phone{
+
+               input[type="text"], input[type="email"]{
+                           font-family: $secondary-font-family;
+                           font-size: $font-size-normal;
+                           font-weight: $font-weight-normal;
+                           line-height: 24px;
+                           color: $primary-font--color;
+                           opacity: .5;
+                           outline: none;
+                           border: none;
+                           background: #FAFAFA;
+                           padding: .5vw;
+                       }
+              }
+
+     .message{
+          .message-textarea{
+                   height: 30vh;
+
+                   textarea{     
+                            height: 100%;
+                           font-family: $secondary-font-family;
+                           font-size: $font-size-normal;
+                           font-weight: $font-weight-normal;
+                           line-height: 24px;
+                           color: $primary-font--color;
+                           opacity: .5;
+                           outline: none;
+                           border: none;
+                           background: #FAFAFA;
+                           padding: .5vw;
+                 }
+            }
+
+       .send-message{
+                input[type="submit"]{
+                      padding: 1vw 2.5vw;
+                      background: $font-items-color;
+                      font-family: $secondary-font-family;
+                      font-size: $font-size-normal;
+                      font-weight: $font-weight-normal;
+                      line-height: 24px;
+                      color: $secondary-font-color;
+                      outline: none;
+                      border: none;
+                      cursor: pointer;
+           }
+       }
+   }
+ }
+
+}
