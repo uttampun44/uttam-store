@@ -4,6 +4,7 @@ import  './scss/main.scss';
 import Singup from './Components/Signup/Signup';
 import Login from './Components/Login/Login';
 import About from './Components/Aboutpage/About';
+import Contact from './Components/Contact/Contact';
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                      <Route exact path='/signup' element={<Singup />}></Route>
                      <Route exact path='/login' element={<Login />}></Route>
                      <Route exact path='/about' element={<About />}></Route>
+                     <Route exact path='/contact' element={<Contact />}></Route>
                   </Routes>     
              </div>  
     </BrowserRouter>
