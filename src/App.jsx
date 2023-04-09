@@ -16,7 +16,7 @@ function App() {
                      <Route exact path='/addtocart' element={ <Addtocart />}></Route>
                      <Route exact path='/signup' element={<Singup />}></Route>
                      <Route exact path='/login' element={<Login />}></Route>
-                     <Route exact path='/conatc' element={<About />}></Route>
+                     <Route exact path='/about' element={<About />}></Route>
                   </Routes>     
              </div>  
     </BrowserRouter>
