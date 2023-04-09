@@ -1,0 +1,98 @@
+.aboutpage-hero{
+    display: flex;
+    align-items: center;
+    padding: 11vw 0vw 11vw 10.3vw;
+.aboutpage-title{
+    flex: .5;
+}
+.hero-image{
+   flex: .5;
+   img{
+       width: 100%;
+   }
+}
+}
+// sales section
+
+.sales-goals{
+max-width: 1170px;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+align-items: center;
+// justify-content: space-between;
+gap: 2.4vw;
+
+.sales, .monthly-sales, .customer-active, .annual-goals{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 2.7vw 0vw;
+  width: 33.3%;
+}
+}
+
+.our-team{
+max-width: 1170px;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+align-items: center;
+column-gap: 1vw;
+margin-top: 11vw;
+margin-bottom: 15vw;
+.chairman {
+  width: 33.3%;
+  border-radius: 4px;
+   .chairman-image{
+       background-color: #F5F5F5;
+       padding: 2.7vw 3vw 0vw 2.7vw;
+        img{
+            width: 14vw;
+            height: 28vh;
+        }
+   }
+}
+
+.managing-director{
+  width: 33.3%;
+  border-radius: 4px;
+    .director-image{
+       background-color: #F5F5F5;
+       padding: 2.7vw 3vw 0vw 2.7vw;
+       img{
+            width: 14vw;
+            height: 28vh;
+       }
+    }
+}
+
+.product-designer{
+  width: 33.3%;
+  border-radius: 4px;
+    .designer-image{
+       background-color: #F5F5F5;
+       padding: 2.7vw 3vw 0vw 2.7vw;
+       img{
+            width: 14vw;
+            height: 28vh;
+       }
+    }
+}
+}
+
+// customer service section
+
+.customer-service-block{
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 12vw;
+ 
+  .fastdelivery, .customer-service, .moneyback-guarantee{
+       display: grid;
+       row-gap: 1.3vw;
+       justify-items: center;
+  }
+}
