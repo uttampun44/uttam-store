@@ -9,12 +9,12 @@ import styled from 'styled-components';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Featured from '../Featuredsection/Featured';
 import Footer from '../Footer/Footer';
-
-
+import Sellingproducts from './Sellingproducts';
+import Exploreproducts from './Exploreproducts';
 
 function Home() {
 
-
+    const [selling, setSelling] = useState(product)
 const Button =styled(Link)`
     
     font-weigth: 500;
@@ -189,7 +189,173 @@ const Button =styled(Link)`
           </section>
 
           <Featured />
+             
+          <section className='selling-section'>
+                  <div className='selling'>
+                  <hr></hr>
+                     <div className='this-month'>
+                         <div className='month-color'>
 
+                         </div>
+
+                        <div className='this-month-title'>
+                            <p>This Month</p>
+                         </div>
+                     </div>
+
+                     <div className='best-selling-products'>
+                          <div className='bestselling-title'>
+                              <p>Best Selling Products</p>
+                          </div>
+
+                          <div className='selling-viewall'>
+                              <Link to= '/'>View All</Link>
+                          </div>
+                       </div>
+                       <div className='selling-container'>
+
+                    {
+                     selling.slice(4, 8).map( (itemsIndex) =>{
+
+                         return(
+                             <Sellingproducts key={itemsIndex.id} {...itemsIndex}/>
+                         )
+                    })
+                 }
+               </div>
+                  </div>
+            </section>
+
+                 {/* music experience */}
+
+                 <section>
+                   <div className='music_experience_section'>
+                     <div className='music-description-row'>
+                          <div className='music-descripton-grid'>
+                               <div className='categories'>
+                                    <p>Categories</p>
+                               </div>
+
+                               <div className='enhance-music'>
+                                  <p id='enhance'>Enhance Your Music Experience</p>
+                                  <div className='offer_til_valid'>
+                                     <div className='days'>
+                                       <p id='day_in_number'>05 &nbsp;<span id='day-in-word'>days</span></p>
+                                     </div>
+                                     <div className='hours'>
+                                        <p id='hour_in_number'>23 &nbsp;<span id='hour_in_word'>hours</span></p>
+                                        </div>
+                                        <div className='minutes'>
+                                        <p id='minutes_in_number'>59 &nbsp;<span id='hour_in_word'>minutes</span></p>
+                                        </div>
+                                        <div className='seconds'>
+                                        <p id='seconds_in_number'>35 &nbsp;<span id='second_in_word'>seconds</span></p>
+                                        </div>
+                                  </div>
+
+                                  <div className='buy-now'>
+                                     <Link to='/'>Buy Now</Link>
+                                  </div>
+                               </div>
+                          </div>
+                          <div className='music_experience_img'>
+                             <img src='/src/assets/jblspeaker_wallpaper.png'/>
+                          </div>
+                     </div>
+                    </div>    
+               </section>
+
+                 {/* explore our products */}
+
+                 <section>
+                    <div className='explore-our-products'>
+
+                          <div className='our-products-title-row'>
+                                <div className='products-block'>
+
+                                </div>
+                                <div className='our-products'>
+                                     <p>Our Products</p>
+                                </div>
+                          </div>
+
+                          <div className='explore-product-heading-row'>
+                                <h6>Explore Our Products</h6>
+
+                                <div className='explore-data-grid'>
+                                     {
+                                        selling.slice(8, 16).map((exploreIndex) =>{
+                                            return(
+                                                <Exploreproducts key={exploreIndex.id} {...exploreIndex}/>
+                                            )
+                                        })
+                                     }
+                                </div>
+
+                                <div className='view-all-exploreproduct'>
+                                    <Link to= '/'>View All</Link>
+                                </div>
+                          </div>
+                    </div>
+               </section>
+
+                  {/* new arrival section */}
+                  <section>
+                            <div className='newarrival'>
+                                 <div className='arrivalColor'>
+                                      <div className='color'>
+
+                                      </div>
+                                      <div className='featured'>
+                                          <p>Featured</p>
+                                      </div>
+                                 </div>
+
+                                 <div className='newArrival_heading'>
+                                       <h7>New Arrival</h7>
+                                 </div>
+
+                                 <div className='newarrival_row'>
+                                      <div className='newArrival-flex'>
+                                          <img src='/src/assets/ps5.png'/>
+                                          <div className='ps-details'>
+                                             <p>PlayStation 5</p>
+                                             <p>Black and white version of the ps 5 coming out on sale</p>
+                                             <Link to='/'>Shop Now</Link>
+                                          </div>
+                                      </div>
+                                      <div className='arrival_grid'>
+                                          <div className='womenCollection'>
+                                              <img src='/src/assets/attractivewoman.png'/>
+                                              <div className='women-collection'>
+                                                 <p>Women's Collections</p>
+                                                 <p>Featured woman collections that give you another vibe.</p>
+                                                 <Link to='/'>Shop Now</Link>
+                                              </div>
+                                          </div>
+                                          <div className='items-row'>
+                                              <div className='speakers'>
+                                                  <img src='/src/assets/amazonecho.png'/>
+                                                  <div className='speakers-description'>
+                                                       <p>Speakers</p>
+                                                       <p>Amazon wireless speakers</p>
+                                                       <Link to='/'>Shop Now</Link>
+                                                  </div>
+                                              </div>
+                                              <div className='perfume'>
+                                                  <img src='/src/assets/perfume.png'/>
+
+                                                  <div className='perfume-description'>
+                                                      <p>Perfume</p>
+                                                      <p>GUCCI INTENSE OUD EDP</p>
+                                                      <Link to='/'>Shop Now</Link>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                 </div>
+                            </div>
+                     </section>
           <Footer />
     </div>
   )
