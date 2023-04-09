@@ -10,6 +10,8 @@ function About() {
   return (
     <div>
           <Header />
+
+             {/* about page hero section */}
              <section className='aboutpage-hero'>
                  <div className='aboutpage-title'>
                      <p>Our Story</p>
@@ -25,6 +27,7 @@ function About() {
                  </div>
              </section>
 
+              {/* company sale and goals section */}
              <section>
                   <div className='sales-goals'>
                        <div className='sales'>
@@ -53,6 +56,7 @@ function About() {
                    </div>
              </section>
 
+              {/* company team description */}
                 <section>
                        <div className='our-team'>
                              <div className='chairman'>
@@ -103,7 +107,7 @@ function About() {
                        </div>
                 </section>
                    
-                   {/* customer features */}
+                   {/* customer features section*/}
                 <section>
                         <div className='customer-service-block'>
                               <div className='fastdelivery'>
