@@ -11,7 +11,7 @@ function About() {
     <div>
           <Header />
 
-             {/* about page hero section */}
+             {/* about page hero section*/}
              <section className='aboutpage-hero'>
                  <div className='aboutpage-title'>
                      <p>Our Story</p>
