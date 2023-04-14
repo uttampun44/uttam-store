@@ -79,6 +79,19 @@ header{
        }
      }
   }
+    .cart-whistlist{
+         .shopping-cartNumber{
+              span{
+                   position: absolute;
+                   background-color: $font-items-color;
+                   color: $secondary-font-color;
+                   font-family: $primary-font-family;
+                    left: 0%;
+                    bottom: 55%;
+                    z-index: -999;
+              }
+         }
+    }
 }
 
 
