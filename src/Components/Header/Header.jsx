@@ -52,7 +52,9 @@ function header() {
 
                            <div className='cart-whistlist'>
                                  <FavoriteIcon />
-                                 <ShoppingCartIcon />
+                              <div className='shopping-cartNumber'>
+                                  <ShoppingCartIcon /><span></span>
+                              </div>
                            </div>
                      </div>
                    </div>
