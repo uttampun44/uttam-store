@@ -59,6 +59,10 @@ header{
                     .cart-whistlist{
                       display: flex;
                       gap: 1em;
+                      .shopping-cartNumber{
+                         position: relative;
+                         
+                      }
                     }
                   }
               }
