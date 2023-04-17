@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { Add } from '../../store/action';
 
-function Exploreproducts({productName, price, quantity, image, realPrice}) {
+function Exploreproducts({productName, price, quantity, image, realPrice, id}) {
 
    const [favColor, setColor] = useState(false)
   const favouriteIcon= () =>{
@@ -13,6 +13,7 @@ function Exploreproducts({productName, price, quantity, image, realPrice}) {
   const dispatch = useDispatch();
    const naviagte = useNavigate();
 
+  //  add to cart functionality
   const addCart = (e) =>{
     dispatch(Add(e))
     naviagte(`/addtocart/${e.productName}`)

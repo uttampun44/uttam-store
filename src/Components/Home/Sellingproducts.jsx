@@ -6,7 +6,7 @@ import {Add} from '/src/store/action';
 import  Product from '/src/Singleproduct/Product'
 import { useDispatch } from 'react-redux';
 
-function Sellingproducts({productName, price, quantity, image, realPrice}) {
+function Sellingproducts({id, productName, price, quantity, image, realPrice}) {
 
   const[fav, setFav] = useState(false);
   const [rat, setRatings] = useState(false);
@@ -23,6 +23,7 @@ function Sellingproducts({productName, price, quantity, image, realPrice}) {
     setRatings(!rat);
   }
 
+  // add to cart functionality
   const addCart = (item) =>{
     dispatch(Add(item))
     naviagte(`/addtocart/${item.productName}`)
