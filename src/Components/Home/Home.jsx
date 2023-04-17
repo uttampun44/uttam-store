@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../Header/header'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
@@ -11,10 +11,22 @@ import Featured from '../Featuredsection/Featured';
 import Footer from '../Footer/Footer';
 import Sellingproducts from './Sellingproducts';
 import Exploreproducts from './Exploreproducts';
+import { useDispatch } from 'react-redux';
+import { Add } from '../../store/action';
 
 function Home() {
 
     const [selling, setSelling] = useState(product)
+   
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const addCart = (e) =>{
+       console.log(e);
+        dispatch(Add(e));
+        navigate(`/addtocart/${e.productName}`); 
+    }
+
 const Button =styled(Link)`
     
     font-weigth: 500;
@@ -154,7 +166,7 @@ const Button =styled(Link)`
 
                                     product.slice(0, 4).map((singleItem) =>{
                                         return(
-                                            <div key={singleItem.id}>
+                                            <div>
                                                   <div className='singleproduct'>
                                                        <div className='product-details'>
                                                             <div className='product-image'>
@@ -166,7 +178,7 @@ const Button =styled(Link)`
 
                                                             <div className='addto-cart'>
                                                               
-                                                              <Button primary to='/addtocart'>Add To Cart</Button>
+                                                              <button primary onClick={() => addCart(singleItem)}>Add To Cart</button>
                                                             </div>
                                                             <div className='description'>
                                                                  <p>{singleItem.productName}</p>
