@@ -61,7 +61,11 @@ header{
                       gap: 1em;
                       .shopping-cartNumber{
                          position: relative;
-                         
+                            span{
+                              left: 20% !important;
+                              bottom: 85% !important;
+                              border-radius: 50%;
+                            }
                       }
                     }
                   }

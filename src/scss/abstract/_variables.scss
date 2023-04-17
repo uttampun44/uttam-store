@@ -206,6 +206,14 @@ header{
             background-color: $primary-font--color;
             text-align: center;
             padding: .7em 0%;
+            button{
+              color: $secondary-font-color;
+              font-family: $secondary-font-family;
+              text-decoration: none;
+              background: none;
+              border: none;
+              cursor: pointer;
+            }
             
           }
           .description{
@@ -562,10 +570,13 @@ header{
              }
         }
         .add-to-cart{
-             a{
+             button{
                  color: $secondary-font-color;
                  font-family: $secondary-font-family;
                  text-decoration: none;
+                 background: none;
+                 border: none;
+                 cursor: pointer;
              }
         }
       }
@@ -651,10 +662,13 @@ header{
           }
           .explore-data-grid{
                .add-to-cart{
-                  a{
+                  button{
                     color: $secondary-font-color;
                     font-family: $secondary-font-family;
                     text-decoration: none;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
                   }
                }
                .explore-product-details{

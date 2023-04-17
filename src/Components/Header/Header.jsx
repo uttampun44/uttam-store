@@ -3,6 +3,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 
 function header() {
 
@@ -11,6 +13,8 @@ function header() {
       right: '30px',
       top: '10px',
    }
+   const cartItems = useSelector((state) => state.cart.carts)
+
   return (
     <div>
         <div className='header-top'>
@@ -53,7 +57,7 @@ function header() {
                            <div className='cart-whistlist'>
                                  <FavoriteIcon />
                               <div className='shopping-cartNumber'>
-                                  <ShoppingCartIcon /><span></span>
+                                  <ShoppingCartIcon /><span>{cartItems.length}</span>
                               </div>
                            </div>
                      </div>

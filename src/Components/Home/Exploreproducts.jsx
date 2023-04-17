@@ -1,12 +1,21 @@
 import React, { useState } from 'react'
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { Add } from '../../store/action';
 
 function Exploreproducts({productName, price, quantity, image, realPrice}) {
 
    const [favColor, setColor] = useState(false)
   const favouriteIcon= () =>{
      setColor(!favColor)
+  }
+  const dispatch = useDispatch();
+   const naviagte = useNavigate();
+
+  const addCart = (e) =>{
+    dispatch(Add(e))
+    naviagte(`/addtocart/${e.productName}`)
   }
   return (
     <div>
@@ -20,7 +29,7 @@ function Exploreproducts({productName, price, quantity, image, realPrice}) {
              </div>
 
              <div className='add-to-cart'>
-               <Link to='/addtocart'>Add To Cart</Link>
+               <button onClick={() => addCart({productName, price, image, realPrice})} >Add To Cart</button>
              </div>
 
              <div className='explore-product-details'>

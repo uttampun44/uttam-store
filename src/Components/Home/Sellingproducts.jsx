@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import GradeIcon from '@mui/icons-material/Grade';
+import {Add} from '/src/store/action';
+import  Product from '/src/Singleproduct/Product'
+import { useDispatch } from 'react-redux';
 
 function Sellingproducts({productName, price, quantity, image, realPrice}) {
 
   const[fav, setFav] = useState(false);
   const [rat, setRatings] = useState(false);
+
+   const dispatch = useDispatch();
+    const naviagte =  useNavigate();
 
   const favIcon = () =>{
     setFav(!fav)
@@ -17,6 +23,10 @@ function Sellingproducts({productName, price, quantity, image, realPrice}) {
     setRatings(!rat);
   }
 
+  const addCart = (item) =>{
+    dispatch(Add(item))
+    naviagte(`/addtocart/${item.productName}`)
+  }
   return (
 
          <div className='selling-products-row'>
@@ -27,7 +37,7 @@ function Sellingproducts({productName, price, quantity, image, realPrice}) {
                 </div>
             </div>
             <div className='add-to-cart'>
-               <Link to='/addtocart'>Add To Cart</Link>
+               <button onClick={() => addCart({productName, price, image, realPrice})}>Add To Cart</button>
             </div>
             <div className='selling-product-description'>
                 <p>{productName}</p>
