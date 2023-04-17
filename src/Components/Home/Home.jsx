@@ -16,15 +16,17 @@ import { Add } from '../../store/action';
 
 function Home() {
 
-    const [selling, setSelling] = useState(product)
+    const [selling, setSelling] = useState(product);
+
    
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const addCart = (e) =>{
-       console.log(e);
-        dispatch(Add(e));
-        navigate(`/addtocart/${e.productName}`); 
+    // add to cart functionality
+    const addCart = (item) =>{
+       console.log(item);
+        dispatch(Add(item));
+        navigate(`/addtocart/${item.id}`); 
     }
 
 const Button =styled(Link)`
@@ -164,10 +166,10 @@ const Button =styled(Link)`
                     <div className='sales-slider'>
                                   {
 
-                                    product.slice(0, 4).map((singleItem) =>{
+                                    selling.slice(0, 4).map((singleItem) =>{
                                         return(
                                             <div>
-                                                  <div className='singleproduct'>
+                                                  <div className='singleproduct' key={singleItem.id}>
                                                        <div className='product-details'>
                                                             <div className='product-image'>
                                                                  <img src={singleItem.image}/>

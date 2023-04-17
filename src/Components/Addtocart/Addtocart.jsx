@@ -11,27 +11,14 @@ import { Delete } from '../../store/action';
 function Addtocart() {
 
   const getItems = useSelector((state) => state.cart.carts);
- 
+ console.table(getItems);
 
-  const [price, setPrice] = useState(0);
+
   const [itemprice, setItemprice] = useState(0)
 
   const deleteCart = useDispatch();
 
-  const increment = () =>{
-     setPrice(price + 1)
-    console.log(price);
-  }
-  const decrement = () =>{
-  
-    if(price < 1){
-      return price;
-    }else{
-      setPrice(price - 1)
-    }
-    console.log(price)
-  }
-
+  // cart total price
   const totalPrice = () =>{
     let productPrice = 0;
       getItems.map((singlePrice) =>{
@@ -46,8 +33,10 @@ function Addtocart() {
     totalPrice();
   }, [totalPrice])
 
+  // removecart functionality
   const removeCart = (id) =>{
-     console.log("remove cart")
+     console.log(id);
+     console.log("Remove from cart")
      deleteCart(Delete(id))
    }
 

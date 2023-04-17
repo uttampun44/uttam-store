@@ -7,7 +7,7 @@ export const Add = (item) =>{
 
 export const Delete = (id) =>{
     return{
-        type: 'Remove_item_cart',
+        type: 'REMOVE_FROM_CART',
         palyload: id
     }
 }
