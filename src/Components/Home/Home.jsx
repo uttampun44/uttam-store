@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Header from '../Header/header'
+import Header from '../Header/Header'
 import { Link, useNavigate } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -18,7 +18,7 @@ function Home() {
 
     const [selling, setSelling] = useState(product);
 
-   
+
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -26,11 +26,11 @@ function Home() {
     const addCart = (item) =>{
        console.log(item);
         dispatch(Add(item));
-        navigate(`/addtocart/${item.id}`); 
+        navigate(`/addtocart/${item.id}`);
     }
 
 const Button =styled(Link)`
-    
+
     font-weigth: 500;
     text-align: center;
     color: #fff;
@@ -61,7 +61,7 @@ const Button =styled(Link)`
                                <li><Link>Healthy & Beauty</Link></li>
                           </ul>
                      </div>
-                     
+
                      <div className='carousel'>
                             <Carousel showThumbs={false} showStatus={false} controls={false} autoPlay={true} infiniteLoop={true}>
                                 <div className='first-carousel'>
@@ -77,7 +77,7 @@ const Button =styled(Link)`
                                          <Link to='/shopnow'>Shop now</Link><ArrowRightAltIcon style={{color: 'white'}}/>
                                       </div>
                                     </div>
-                                     
+
                                      <div className='apple-second'>
                                          <img src='/src/assets/heroimageone.svg'/>
                                      </div>
@@ -95,7 +95,7 @@ const Button =styled(Link)`
                                          <Link to='/shopnow'>Shop now</Link><ArrowRightAltIcon style={{color: 'white'}}/>
                                       </div>
                                     </div>
-                                     
+
                                      <div className='apple-second'>
                                          <img src='/src/assets/sports.png'/>
                                      </div>
@@ -114,7 +114,7 @@ const Button =styled(Link)`
                                          <Link to='/shopnow'>Shop now</Link><ArrowRightAltIcon style={{color: 'white'}}/>
                                       </div>
                                     </div>
-                                     
+
                                      <div className='apple-second'>
                                          <img src='/src/assets/heroimageone.svg'/>
                                      </div>
@@ -132,7 +132,7 @@ const Button =styled(Link)`
                                          <Link to='/shopnow'>Shop now</Link><ArrowRightAltIcon style={{color: 'white'}}/>
                                       </div>
                                     </div>
-                                     
+
                                      <div className='apple-second'>
                                          <img src='/src/assets/fashion.png'/>
                                      </div>
@@ -141,7 +141,7 @@ const Button =styled(Link)`
                      </div>
                 </div>
           </section>
-                   
+
                     {/* today deals sections */}
           <section>
                <div className='main-deal'>
@@ -155,7 +155,7 @@ const Button =styled(Link)`
                         </div>
                         <div className='time'>
                            <div className='display-date'>
-                                  <span>Days &nbsp; &nbsp; &nbsp; &nbsp; </span><span>Hours  &nbsp; &nbsp; &nbsp; &nbsp; </span><span>Minutes  &nbsp; &nbsp; &nbsp; &nbsp; </span><span>seconds  &nbsp; &nbsp; &nbsp; &nbsp;</span>   
+                                  <span>Days &nbsp; &nbsp; &nbsp; &nbsp; </span><span>Hours  &nbsp; &nbsp; &nbsp; &nbsp; </span><span>Minutes  &nbsp; &nbsp; &nbsp; &nbsp; </span><span>seconds  &nbsp; &nbsp; &nbsp; &nbsp;</span>
                            </div>
                            <div className='display-time'>
                                 <span>03 :</span> <span>23 :</span> <span>19 :</span> <span> &nbsp;20</span>
@@ -179,7 +179,7 @@ const Button =styled(Link)`
                                                             </div>
 
                                                             <div className='addto-cart'>
-                                                              
+
                                                               <button primary onClick={() => addCart(singleItem)}>Add To Cart</button>
                                                             </div>
                                                             <div className='description'>
@@ -203,7 +203,7 @@ const Button =styled(Link)`
           </section>
 
           <Featured />
-             
+
           <section className='selling-section'>
                   <div className='selling'>
                   <hr></hr>
@@ -276,7 +276,7 @@ const Button =styled(Link)`
                              <img src='/src/assets/jblspeaker_wallpaper.png'/>
                           </div>
                      </div>
-                    </div>    
+                    </div>
                </section>
 
                  {/* explore our products */}
