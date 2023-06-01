@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -36,7 +34,6 @@ function Addtocart() {
   // removecart functionality
   const removeCart = (id) =>{
      console.log(id);
-     console.log("Remove from cart")
      deleteCart(Delete(id))
    }
 
